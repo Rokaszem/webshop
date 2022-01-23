@@ -1,20 +1,23 @@
 <template>
   <NavigationBar />
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!--<img alt="Vue logo" src="./assets/logo.png" />-->
+  <!--<HelloWorld msg="Welcome to Your Vue.js App" />-->
+  <Products />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import NavigationBar from './components/NavigationBar.vue'
+//import HelloWorld from "./components/HelloWorld.vue";
+import NavigationBar from "./components/NavigationBar.vue";
+import Products from './components/Products.vue';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld, 
-    NavigationBar
-  }
-}
+    //HelloWorld,
+    NavigationBar,
+    Products
+  },
+};
 </script>
 
 <style>
@@ -23,7 +26,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body{
+body {
   margin: 0;
 }
 </style>

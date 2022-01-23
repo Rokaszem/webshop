@@ -4,13 +4,28 @@
     <ul class="nav-links">
       <li><a href="#">Dashboard</a></li>
       <li><a href="#">Products</a></li>
-      <li><a href="#">Cart</a></li>
+      <li><div id="cart-btn" @click="openCart">Cart</div></li>
     </ul>
+  </div>
+  <div id="cart" v-show="toggleCart">
+      <!-- TODO: cart -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "NavigationBar",
+  data() {
+    return {
+      toggleCart: false,
+    };
+  },
+  methods: {
+    openCart() {
+      this.toggleCart = !this.toggleCart;
+    },
+  },
+};
 </script>
 
 <style scoped>
